@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="localization.json" />
+    <Content Remove="wwwroot\js\listings.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="localization.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\listings.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

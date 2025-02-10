@@ -1,0 +1,44 @@
+﻿@page "/{fieldTypeName}/listings/{listingId}"
+@model AdminPortal.Pages.ListingDetails.ListingDetailsModel
+
+<link rel="stylesheet" href="~/css/listing-details.css" />
+
+<script>
+    var listingId = @ViewData["ListingId"];
+    var fieldType = @ViewData["fieldType"];
+</script>
+
+<div class="container">
+    <div class="left-content">
+        <div class="listing-details">
+            <img id="mainImage" src="">
+        </div>
+        <div class="listing-thumbnails" id="thumbnails">
+            <!-- Dinamik olarak küçük resimler buraya eklenecek -->
+        </div>
+    </div>
+
+    <div class="right-content">
+        <div class="listing-info">
+            <h2 id="title"></h2>
+            <p>Fiyat: <span id="price"></span> TL</p>
+            <table id="fields">
+                <tr>
+                    <th>İlan No</th>
+                    <td id="listingNo"></td>
+                </tr>
+                <tr>
+                    <th>İlan Tarihi</th>
+                    <td id="listingDate"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact-info">
+            <h3>İletişim Bilgileri</h3>
+            <p>Ad: <span id="contactName"></span></p>
+            <p>Tel: <span id="contactPhone"></span></p>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/listing-details.js"></script>

@@ -1,0 +1,94 @@
+﻿.body {
+    font-size: 10px;
+}
+
+.topnav {
+    background-color: #3F475F;
+    overflow: hidden;
+    width: 100%;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+        .topnav a:hover {
+            text-decoration: underline;
+        }
+
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+
+        .topnav a#logout {
+            float: right;
+            background-color: red;
+            display: none;
+        }
+
+
+.top-nav-content {
+    width: 68%;
+    display: flex;
+    position: relative;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #1a2236;
+    padding: 5px 15px;
+    width: 264px;
+    height: 36px;
+    margin-top: 14px;
+    border-radius: 3px;
+}
+
+    .search-container input[type="text"] {
+        border: none;
+        outline: none;
+        background: none;
+        color: #d5dae2;
+        font-size: 14px;
+        width: 100%;
+    }
+
+        .search-container input[type="text"]::placeholder {
+            color: #a1a7b2; /* Placeholder rengi */
+        }
+
+    .search-container button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+        .search-container button i {
+            color: #9eaabd;
+            font-size: 14px;
+        }
+
+.right-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Bu öğeleri sağa itmek için */
+    right: 0px;
+    position: absolute;
+    top: 9px;
+}
+
+.listing-button {
+    background-color: #3388E3;
+    border-radius: 5px;
+    font-weight: bold;
+}
